@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    position: relative;
+    overflow: none;
+    max-height: 95vh;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, #42a5f5, #00acc1);
+}
+
+.circle {
+    height: 50px; 
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    opacity: 0.7;
+    position: absolute;
+    animation: bubble 4s linear infinite;
+}
+
+.circle1 {
+    top: 10%;
+    left: 15%;
+    animation: bubble 4s linear infinite;
+}
+
+.circle2 {
+    top: 20%;
+    left: 35%;
+    animation: bubble 7s linear infinite;
+}
+
+.circle3 {
+    top: 15%;
+    left: 55%;
+    animation: bubble 6s linear infinite;
+}
+
+.circle4 {
+    top: 25%;
+    left: 80%;
+    animation: bubble 10s linear infinite;
+}
+
+.circle5 {
+    top: 30%;
+    left: 5%;
+    animation: bubble 6s linear infinite;
+}
+
+.circle6 {
+    top: 35%;
+    left: 25%;
+    animation: bubble 10s linear infinite;
+}
+
+.circle7 {
+    top: 30%;
+    left: 45%;
+    animation: bubble 4s linear infinite;
+}
+
+.circle8 {
+    top: 40%;
+    left: 65%;
+    animation: bubble 4s linear infinite;
+}
+
+.circle9 {
+    top: 45%;
+    left: 90%;
+    animation: bubble 10s linear infinite;
+}
+
+.circle10 {
+    top: 55%;
+    left: 15%;
+    animation: bubble 4s linear infinite;
+}
+
+.circle11 {
+    top: 50%;
+    left: 35%;
+    animation: bubble 8s linear infinite;
+}
+
+.circle12 {
+    top: 55%;
+    left: 55%;
+    animation: bubble 6s linear infinite;
+}
+
+.circle13 {
+    top: 60%;
+    left: 75%;
+    animation: bubble 8s linear infinite;
+}
+
+.circle14 {
+    top: 75%;
+    left: 5%;
+    animation: bubble 4s linear infinite;
+}
+
+.circle15 {
+    top: 72%;
+    left: 27%;
+    animation: bubble 10s linear infinite;
+}
+
+.circle16 {
+    top: 69%;
+    left: 45%;
+    animation: bubble 4s linear infinite;
+}
+
+.circle17 {
+    top: 72%;
+    left: 64%;
+    animation: bubble 4s linear infinite;
+}
+
+.circle18 {
+    top: 76%;
+    left: 85%;
+    animation: bubble 8s linear infinite;
+}
+
+.circle19 {
+    top: 90%;
+    left: 16%;
+    animation: bubble 4s linear infinite;
+}
+
+.circle20 {
+    top: 87%;
+    left: 36%;
+    animation: bubble 10s linear infinite;
+}
+
+.circle21 {
+    top: 88%;
+    left: 54%;
+    animation: bubble 6s linear infinite;
+}
+
+.circle22 {
+    top: 85%;
+    left: 73%;
+    animation: bubble 8s linear infinite;
+}
+
+
+.dot {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    border-radius: 50%;
+    background: white;
+    display: block;
+}
+
+@keyframes bubble {
+    0% {
+        transform: scale(0) translateY(0px) rotate(75deg);
+    }
+
+    100% {
+        transform: scale(1) translateY(-100px) rotate(360deg); 
+    }
+    
+}
+

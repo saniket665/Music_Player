@@ -1,0 +1,260 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ body {
+     color: white;
+     background: black;
+ }
+
+ h1, h2, h3, h4, h5, h6, p {
+     color: white;
+ }
+
+
+.nav {
+    display: flex;
+    background: #21252d;
+    justify-content: space-between;
+    padding: 0 5rem;
+    height: 4rem;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+.logo span {
+    color: blue;
+}
+
+.search-icon-big {
+    display: none !important;
+}
+
+.searchbar {
+    background: black;
+    position: relative;
+    border-radius: 5px;
+}
+
+.search {
+    background: black;
+    border: none;
+    outline: none;
+    color: rgb(216, 216, 216);
+    padding: 10px;
+    padding-left: 35px;
+    border-radius: 20px;
+    width: 25vw;
+}
+
+.search::placeholder {
+    color: rgb(175, 174, 174);
+}
+
+.searchbar i {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.wrapper {
+    padding: 6rem 5rem;
+    padding-bottom: 2rem;
+    background: black;
+    min-height: 100vh;
+}
+
+.playlists {
+    width: 100%;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.title {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    letter-spacing: 1px;
+    margin-left: 2.5vw;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 13vw;
+    height: 25vh;
+    margin: 6px;
+    border: none;
+    border-radius: 5px;
+}
+
+.card:first-child {
+    margin-left: 0;
+}
+
+.card img {
+    width: 13vw;
+    height: 25vh;
+    border-radius: 5px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    cursor: pointer;
+}
+
+.card:hover img{
+    opacity: 0.8;
+}
+
+.card:hover .play-icon {
+    display: block;
+}
+
+.info {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+}
+
+.info h3 {
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1300px) {
+    .title {
+        margin-left: 2.5vw;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .title {
+        margin-left: 1vw;
+    }
+}
+
+@media screen and (max-width: 1152px) {
+    .card {
+        width: 10rem;
+        height: 8rem;
+    }
+
+    .card img {
+        width: 10rem;
+        height: 8rem;
+    }
+
+    .wrapper {
+        min-width: max-content;
+        overflow-x: hidden;
+    }
+
+    .card-container {
+        flex-wrap: nowrap;
+        /* overflow-x: hidden; */
+        background: black;
+        width: max-content;
+    }
+
+    .title {
+        text-align: unset;
+        width: 100vw;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 956px) {
+    .nav {
+        padding: 0 3rem;
+        justify-content: space-between;
+    }
+
+    .search {
+        width: 16rem;
+    }
+
+    .wrapper {
+        padding: 6rem 3rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .nav {
+        padding: 0 2rem;
+    }
+
+    .searchbar {
+        display: none;
+    }
+
+    .search-icon-big {
+        display: block !important;
+        padding-right: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .wrapper {
+        padding: 6rem 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .playlists {
+        margin-bottom: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .card {
+        width: 8rem;
+        height: 7rem;
+    }
+
+    .card img {
+        width: 8rem;
+        height: 7rem;
+    }
+
+    .info h3 {
+        font-size: 1rem
+    }
+
+    .show-search {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .not-show {
+        display: none !important;
+    }
+}
+
+
+
+
